@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Twitter.Schedule": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
