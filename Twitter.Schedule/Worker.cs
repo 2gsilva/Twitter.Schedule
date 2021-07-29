@@ -23,10 +23,13 @@ namespace Twitter.Schedule
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                var authenticationService = new AuthenticationService();
-                var authentication = new Authentication();
+                // var authenticationService = new AuthenticationService();
+                // var authentication = new Authentication();
+                var TweetService = new TweetService();
+                
+                TweetsRetorno getTweets = await TweetService.GetTweets();
 
-                authenticationService.GetAuthentication(authentication);
+                // authenticationService.GetAuthentication(authentication);
 
                 _logger.LogInformation("Isso é um teste.", DateTimeOffset.Now);
                 await Task.Delay(50000, stoppingToken);
