@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("dotnet-Twitter.Schedule-451A2C67-D52D-45F6-9537-E3A5E7484CCD")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Twitter.Schedule")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

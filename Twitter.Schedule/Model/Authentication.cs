@@ -7,14 +7,17 @@ namespace Twitter.Schedule.Model
 {
     class Authentication
     {
-        // public string Authorization { get; set; }
-        // API Key
-        [JsonPropertyName("username")]
-        public string Username { get; set; }
-        // API Secret Key
-        [JsonPropertyName("password")]
-        public string Password { get; set; }
-       // [JsonPropertyName("access_token")]
-       // public string BeareToken { get; set; }
+        public string Username { get; set; } 
+        public string Basic { get; set; }
+        public string Bearer { get; set; }
+        [JsonPropertyName("access_token")]
+        public string BeareToken { get; set; }
+
+        public Authentication(string username, string basic, string bearer)
+        {
+            this.Username = username;
+            this.Basic = basic;
+            this.Bearer = bearer;
+        }
     }
 }

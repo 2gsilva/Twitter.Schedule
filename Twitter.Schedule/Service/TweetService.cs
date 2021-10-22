@@ -1,31 +1,53 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Twitter.Schedule.Model;
+using System.IO;
 
 namespace Twitter.Schedule.Service
 {
     class TweetService
     {
         private static HttpClient client = new HttpClient();
-        private static string requestUri = "https://api.twitter.com/2/tweets/search/recent?query=%23firjan&expansions=author_id";
+        private static string requestUri = null;
+        private IConfiguration Configuration;
+
+        public TweetService(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
 
         public async Task<TweetsRetorno> GetTweets()
         {
+            var authenticationModel = new Authentication("Authorization", null, Configuration["Authentication:Bearer"].ToString());
+
+            requestUri = Configuration["Request:UriTweets"].ToString();
 
             // Headers
-            client.DefaultRequestHeaders.Add("Authorization",
-                "Bearer AAAAAAAAAAAAAAAAAAAAAEF9RwEAAAAAGF5TKCtPB%2BreOJGaji8s%2FtfMykQ%3DpPnmGNtwuTw5w20SaZmYowu9FZltYwddl0hpMe48qh4ZWViXUN");
+            client.DefaultRequestHeaders.Add(authenticationModel.Username,
+                authenticationModel.Bearer);
             client.DefaultRequestHeaders.Add("Connection",
                "keep-alive");
 
+            var response = await client.GetStringAsync(requestUri);
 
-            var response = await client.GetStringAsync(requestUri); 
+            ExportaJson(response);
 
             return JsonConvert.DeserializeObject<TweetsRetorno>(response);
+        }
+
+        private void ExportaJson (string respostaJson)
+        {
+            using (StreamWriter file = File.CreateText(@"C:\RepoPessoal\Twitter.Schedule\Twitter.Schedule\ArquivosJson\Tweet.json"))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                
+                serializer.Serialize(file, respostaJson);
+            }
         }
     }
 }

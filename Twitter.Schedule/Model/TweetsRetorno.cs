@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,6 +7,7 @@ namespace Twitter.Schedule.Model
 {
     class TweetsRetorno
     {
-        public List<Tweet> Tweets { get; set; }
+        [JsonProperty("data")]
+          public List<Tweet> Data { get; set; }
     }
 }

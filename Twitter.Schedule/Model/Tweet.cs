@@ -7,12 +7,11 @@ namespace Twitter.Schedule.Model
 {
     class Tweet
     {
-        [JsonPropertyName("id")]
+        [JsonPropertyNameAttribute("id")]
         public int TweetId { get; set; }
-        [JsonPropertyName("text")]
+        [JsonPropertyNameAttribute("text")]
         public string Text { get; set; }
-        [JsonPropertyName("author_id")]
-        public int UserId { get; set; }
-        public virtual User User { get; set; }
+        [JsonPropertyNameAttribute("author_id")]
+        public string Authorid { get; set; }
     }
 }
