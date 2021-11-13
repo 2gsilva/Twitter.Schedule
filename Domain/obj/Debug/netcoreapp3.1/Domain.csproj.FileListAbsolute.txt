@@ -1,0 +1,10 @@
+C:\RepoPessoal\Twitter.Schedule\Domain\bin\Debug\netcoreapp3.1\Domain.deps.json
+C:\RepoPessoal\Twitter.Schedule\Domain\bin\Debug\netcoreapp3.1\Domain.dll
+C:\RepoPessoal\Twitter.Schedule\Domain\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\RepoPessoal\Twitter.Schedule\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.AssemblyReference.cache
+C:\RepoPessoal\Twitter.Schedule\Domain\obj\Debug\netcoreapp3.1\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\RepoPessoal\Twitter.Schedule\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+C:\RepoPessoal\Twitter.Schedule\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
+C:\RepoPessoal\Twitter.Schedule\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
+C:\RepoPessoal\Twitter.Schedule\Domain\obj\Debug\netcoreapp3.1\Domain.dll
+C:\RepoPessoal\Twitter.Schedule\Domain\obj\Debug\netcoreapp3.1\Domain.pdb

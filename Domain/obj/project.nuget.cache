@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Kanz6BoUXLtMUYji7iz5pN4GK0UzEaKi+Zmhscv6+veg/WKuB3BdkWslpIMhU3lLJ+AtFkzpsy3SlWwyiuUxpQ==",
+  "success": true,
+  "projectFilePath": "C:\\RepoPessoal\\Twitter.Schedule\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GSAZEVEDO\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

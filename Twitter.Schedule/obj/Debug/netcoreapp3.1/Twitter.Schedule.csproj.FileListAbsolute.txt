@@ -95,3 +95,11 @@ C:\RepoPessoal\Twitter.Schedule\Twitter.Schedule\bin\Debug\netcoreapp3.1\runtime
 C:\RepoPessoal\Twitter.Schedule\Twitter.Schedule\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\RepoPessoal\Twitter.Schedule\Twitter.Schedule\obj\Debug\netcoreapp3.1\Twitter.Schedule.csproj.AssemblyReference.cache
 C:\RepoPessoal\Twitter.Schedule\Twitter.Schedule\obj\Debug\netcoreapp3.1\Twitter.Schedule.GeneratedMSBuildEditorConfig.editorconfig
+C:\RepoPessoal\Twitter.Schedule\Twitter.Schedule\bin\Debug\netcoreapp3.1\ArquivosJson\Tweet.json
+C:\RepoPessoal\Twitter.Schedule\Twitter.Schedule\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\RepoPessoal\Twitter.Schedule\Twitter.Schedule\bin\Debug\netcoreapp3.1\Application.dll
+C:\RepoPessoal\Twitter.Schedule\Twitter.Schedule\bin\Debug\netcoreapp3.1\Domain.dll
+C:\RepoPessoal\Twitter.Schedule\Twitter.Schedule\bin\Debug\netcoreapp3.1\Infrastructure.dll
+C:\RepoPessoal\Twitter.Schedule\Twitter.Schedule\bin\Debug\netcoreapp3.1\Application.pdb
+C:\RepoPessoal\Twitter.Schedule\Twitter.Schedule\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+C:\RepoPessoal\Twitter.Schedule\Twitter.Schedule\bin\Debug\netcoreapp3.1\Domain.pdb
