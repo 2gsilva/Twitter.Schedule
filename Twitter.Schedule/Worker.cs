@@ -4,10 +4,6 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Twitter.Schedule.Context;
-using Twitter.Schedule.DAL;
-using Twitter.Schedule.Model;
-using Twitter.Schedule.Service;
 using Twitter.Schedule.ServiceApplication;
 
 namespace Twitter.Schedule
@@ -37,8 +33,8 @@ namespace Twitter.Schedule
                 }
                 catch (Exception e)
                 {
-                    _mensagem = "Falha na recuperação de dados do Twitter";
                     var log = e.Message;
+                    _mensagem = "Falha na recuperação de dados do Twitter";
                 }
                 finally
                 {
