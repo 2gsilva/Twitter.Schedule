@@ -16,6 +16,7 @@ namespace Twitter.Schedule
     {
         private readonly ILogger<Worker> _logger;
         private readonly IConfiguration _configuration;
+        private string _mensagem;
 
         public Worker(ILogger<Worker> logger, IConfiguration configuration)
         {
@@ -28,11 +29,22 @@ namespace Twitter.Schedule
             while (!stoppingToken.IsCancellationRequested)
             {
                 var Twieets = new TwitterApplication(_configuration);
-                Twieets.ObterTweets();
-
-
-                _logger.LogInformation("Dados recuperados do Twitter e salvos na Base", DateTimeOffset.Now);
-                await Task.Delay(50000, stoppingToken);
+                
+                try
+                {
+                    Twieets.ObterTweets();
+                    _mensagem = "Dados recuperados do Twitter e salvos na Base";
+                }
+                catch (Exception e)
+                {
+                    _mensagem = "Falha na recuperação de dados do Twitter";
+                    var log = e.Message;
+                }
+                finally
+                {
+                    _logger.LogInformation(_mensagem, DateTimeOffset.Now);
+                    await Task.Delay(50000, stoppingToken);
+                }
             }
         }
     }

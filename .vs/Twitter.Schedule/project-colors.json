@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ed009918-69cf-49fb-8c61-84c14b265f11": {
+      "ProjectGuid": "ed009918-69cf-49fb-8c61-84c14b265f11",
+      "DisplayName": "Twitter.Schedule",
+      "ColorIndex": 0
+    },
+    "38b7125c-8cf6-41ae-8cbb-a1cd7c8723f3": {
+      "ProjectGuid": "38b7125c-8cf6-41ae-8cbb-a1cd7c8723f3",
+      "DisplayName": "Application",
+      "ColorIndex": 1
+    },
+    "21c4e95d-17af-47ef-a48c-9de6d2738c60": {
+      "ProjectGuid": "21c4e95d-17af-47ef-a48c-9de6d2738c60",
+      "DisplayName": "Infrastructure",
+      "ColorIndex": 2
+    },
+    "d0c95d1d-07ce-48f4-bf35-1f28d04bdb70": {
+      "ProjectGuid": "d0c95d1d-07ce-48f4-bf35-1f28d04bdb70",
+      "DisplayName": "Domain",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
